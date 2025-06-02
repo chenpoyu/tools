@@ -7,15 +7,17 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "cronstrue": "^3.9.0",
+    "diff": "^8.0.3",
     "lucide-react": "^0.563.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-router-dom": "^7.13.0",
     "react-markdown": "^10.1.0",
+    "react-router-dom": "^7.13.0",
     "remark-gfm": "^4.0.1",
     "sql-formatter": "^15.7.0"
   },
