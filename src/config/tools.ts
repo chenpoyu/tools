@@ -185,6 +185,13 @@ export const toolsConfig: Tool[] = [
     category: 'Network',
     description: 'Parse and analyze User-Agent strings',
   },
+  {
+    id: 'ip-lookup',
+    name: 'IP Address Lookup',
+    path: '/network/ip-lookup',
+    category: 'Network',
+    description: 'Lookup IP address location and details',
+  },
 
   // System
   {

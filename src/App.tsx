@@ -14,6 +14,7 @@ import HashCalculator from './pages/security/HashCalculator';
 import JwtDecoder from './pages/converters/JwtDecoder';
 import CidrCalculator from './pages/network/CidrCalculator';
 import UserAgentParser from './pages/network/UserAgentParser';
+import IpLookup from './pages/network/IpLookup';
 import HttpStatusCodes from './pages/network/HttpStatusCodes';
 import MarkdownPreviewer from './pages/converters/MarkdownPreviewer';
 import SvgOptimizer from './pages/converters/SvgOptimizer';
@@ -57,6 +58,7 @@ const implementedTools: Record<string, React.ComponentType> = {
   'jwt-decoder': JwtDecoder,
   'cidr': CidrCalculator,
   'ua-parser': UserAgentParser,
+  'ip-lookup': IpLookup,
   'http-codes': HttpStatusCodes,
   'markdown-preview': MarkdownPreviewer,
   'svg-optimizer': SvgOptimizer,
