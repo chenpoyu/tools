@@ -118,6 +118,13 @@ export const toolsConfig: Tool[] = [
     category: 'Security',
     description: 'Generate Content Security Policy headers',
   },
+  {
+    id: 'taiwan-id',
+    name: 'Taiwan ID Generator',
+    path: '/security/taiwan-id',
+    category: 'Security',
+    description: 'Generate and validate Taiwan National ID and Resident Certificate numbers',
+  },
 
   // Frontend
   {
