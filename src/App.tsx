@@ -32,6 +32,7 @@ import XmlFormatter from './pages/formatters/XmlFormatter';
 import CheatSheet from './pages/system/CheatSheet';
 import DiffChecker from './pages/formatters/DiffChecker';
 import Base64Image from './pages/converters/Base64Image';
+import HtmlEditor from './pages/formatters/HtmlEditor';
 
 // Placeholder component for tools not yet implemented
 function ToolPlaceholder({ name, description }: { name: string; description: string }) {
@@ -77,6 +78,7 @@ const implementedTools: Record<string, React.ComponentType> = {
   'cheatsheet': CheatSheet,
   'diff': DiffChecker,
   'base64-image': Base64Image,
+  'html-editor': HtmlEditor,
 };
 
 function App() {

@@ -95,6 +95,13 @@ export const toolsConfig: Tool[] = [
     category: 'Formatters',
     description: 'Test regular expressions with live matching',
   },
+  {
+    id: 'html-editor',
+    name: 'HTML Editor',
+    path: '/formatters/html-editor',
+    category: 'Formatters',
+    description: 'Edit and preview HTML templates in real-time',
+  },
 
   // Security
   {
