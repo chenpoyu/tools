@@ -18,7 +18,8 @@
 - ✅ **JSON 格式化** - 美化、壓縮和驗證 JSON
 - **SQL 格式化** - 格式化 SQL 查詢語句
 - **XML 美化** - 格式化和美化 XML 文件
-- **HTML 編輯器** - 即時編輯和預覽 HTML 模板
+- **HTML 格式化工具** - 格式化和壓縮 HTML 程式碼
+- **JavaScript 格式化工具** - 格式化和壓縮 JavaScript 程式碼
 
 ### 安全工具（Security）
 - **密碼產生器** - 產生安全的隨機密碼
@@ -32,6 +33,7 @@
 - **Grid 視覺化** - 視覺化 CSS Grid 佈局
 - **色彩對比檢查** - 檢查無障礙色彩對比度
 - **Markdown 預覽** - 即時預覽 Markdown
+- **HTML 編輯器** - 即時編輯和預覽 HTML 模板
 
 ### 網路工具（Network）
 - **HTTP 狀態碼** - HTTP 狀態碼參考

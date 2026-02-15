@@ -96,11 +96,18 @@ export const toolsConfig: Tool[] = [
     description: 'Test regular expressions with live matching',
   },
   {
-    id: 'html-editor',
-    name: 'HTML Editor',
-    path: '/formatters/html-editor',
+    id: 'html-formatter',
+    name: 'HTML Formatter',
+    path: '/formatters/html-formatter',
     category: 'Formatters',
-    description: 'Edit and preview HTML templates in real-time',
+    description: 'Format and minify HTML code',
+  },
+  {
+    id: 'js-formatter',
+    name: 'JavaScript Formatter',
+    path: '/formatters/js-formatter',
+    category: 'Formatters',
+    description: 'Format and minify JavaScript code',
   },
 
   // Security
@@ -175,6 +182,13 @@ export const toolsConfig: Tool[] = [
     path: '/system/storage-manager',
     category: 'Frontend',
     description: 'Manage localStorage and sessionStorage',
+  },
+  {
+    id: 'html-editor',
+    name: 'HTML Editor',
+    path: '/frontend/html-editor',
+    category: 'Frontend',
+    description: 'Edit and preview HTML templates in real-time',
   },
   {
     id: 'base64-image',

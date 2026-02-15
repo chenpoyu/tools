@@ -23,6 +23,7 @@ import RegexTester from './pages/converters/RegexTester';
 import FlexboxVisualizer from './pages/frontend/FlexboxVisualizer';
 import GridVisualizer from './pages/frontend/GridVisualizer';
 import ColorContrastChecker from './pages/frontend/ColorContrastChecker';
+import HtmlEditor from './pages/frontend/HtmlEditor';
 import UnicodeConverter from './pages/converters/UnicodeConverter';
 import CronGenerator from './pages/converters/CronGenerator';
 import CspGenerator from './pages/security/CspGenerator';
@@ -30,10 +31,11 @@ import TaiwanIdGenerator from './pages/security/TaiwanIdGenerator';
 import GuidGenerator from './pages/security/GuidGenerator';
 import SqlFormatter from './pages/formatters/SqlFormatter';
 import XmlFormatter from './pages/formatters/XmlFormatter';
+import HtmlFormatter from './pages/formatters/HtmlFormatter';
+import JavaScriptFormatter from './pages/formatters/JavaScriptFormatter';
 import CheatSheet from './pages/system/CheatSheet';
 import DiffChecker from './pages/formatters/DiffChecker';
 import Base64Image from './pages/converters/Base64Image';
-import HtmlEditor from './pages/formatters/HtmlEditor';
 
 // Placeholder component for tools not yet implemented
 function ToolPlaceholder({ name, description }: { name: string; description: string }) {
@@ -77,6 +79,8 @@ const implementedTools: Record<string, React.ComponentType> = {
   'guid': GuidGenerator,
   'sql-format': SqlFormatter,
   'xml-format': XmlFormatter,
+  'html-formatter': HtmlFormatter,
+  'js-formatter': JavaScriptFormatter,
   'cheatsheet': CheatSheet,
   'diff': DiffChecker,
   'base64-image': Base64Image,
