@@ -132,6 +132,13 @@ export const toolsConfig: Tool[] = [
     category: 'Security',
     description: 'Generate and validate Taiwan National ID and Resident Certificate numbers',
   },
+  {
+    id: 'guid',
+    name: 'GUID Generator',
+    path: '/security/guid',
+    category: 'Security',
+    description: 'Generate GUIDs/UUIDs with customizable format options',
+  },
 
   // Frontend
   {

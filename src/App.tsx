@@ -27,6 +27,7 @@ import UnicodeConverter from './pages/converters/UnicodeConverter';
 import CronGenerator from './pages/converters/CronGenerator';
 import CspGenerator from './pages/security/CspGenerator';
 import TaiwanIdGenerator from './pages/security/TaiwanIdGenerator';
+import GuidGenerator from './pages/security/GuidGenerator';
 import SqlFormatter from './pages/formatters/SqlFormatter';
 import XmlFormatter from './pages/formatters/XmlFormatter';
 import CheatSheet from './pages/system/CheatSheet';
@@ -73,6 +74,7 @@ const implementedTools: Record<string, React.ComponentType> = {
   'cron': CronGenerator,
   'csp': CspGenerator,
   'taiwan-id': TaiwanIdGenerator,
+  'guid': GuidGenerator,
   'sql-format': SqlFormatter,
   'xml-format': XmlFormatter,
   'cheatsheet': CheatSheet,

@@ -149,9 +149,10 @@ export function ToolButton({
 interface CopyButtonProps {
   text: string;
   label?: string;
+  size?: number;
 }
 
-export function CopyButton({ text, label = 'Copy' }: CopyButtonProps) {
+export function CopyButton({ text, label = 'Copy', size = 16 }: CopyButtonProps) {
   const [copied, setCopied] = useState(false);
   const { showToast } = useToast();
 
@@ -171,7 +172,7 @@ export function CopyButton({ text, label = 'Copy' }: CopyButtonProps) {
     <ToolButton
       onClick={handleCopy}
       variant="secondary"
-      icon={copied ? <Check size={16} /> : <Copy size={16} />}
+      icon={copied ? <Check size={size} /> : <Copy size={size} />}
       disabled={!text}
     >
       {copied ? 'Copied!' : label}
