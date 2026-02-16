@@ -51,6 +51,13 @@ export const toolsConfig: Tool[] = [
     category: 'Converters',
     description: 'Generate and explain cron expressions',
   },
+  {
+    id: 'case-converter',
+    name: 'Case Converter',
+    path: '/converters/case-converter',
+    category: 'Converters',
+    description: 'Convert strings between camelCase, snake_case, kebab-case and more',
+  },
 
   // Formatters
   {

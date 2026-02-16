@@ -13,6 +13,7 @@
 - **JWT 解碼器** - 解碼和檢查 JWT token
 - ✅ **Unix 時間戳記** - 時間戳記與日期時間雙向轉換
 - **Cron 表達式** - 產生和解釋 cron 表達式
+- **字串大小寫轉換** - camelCase、snake_case、kebab-case 等格式互轉
 
 ### 格式化工具（Formatters）
 - ✅ **JSON 格式化** - 美化、壓縮和驗證 JSON

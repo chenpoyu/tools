@@ -25,6 +25,7 @@ import GridVisualizer from './pages/frontend/GridVisualizer';
 import ColorContrastChecker from './pages/frontend/ColorContrastChecker';
 import HtmlEditor from './pages/frontend/HtmlEditor';
 import UnicodeConverter from './pages/converters/UnicodeConverter';
+import CaseConverter from './pages/converters/CaseConverter';
 import CronGenerator from './pages/converters/CronGenerator';
 import CspGenerator from './pages/security/CspGenerator';
 import TaiwanIdGenerator from './pages/security/TaiwanIdGenerator';
@@ -73,6 +74,7 @@ const implementedTools: Record<string, React.ComponentType> = {
   'grid': GridVisualizer,
   'color-contrast': ColorContrastChecker,
   'unicode': UnicodeConverter,
+  'case-converter': CaseConverter,
   'cron': CronGenerator,
   'csp': CspGenerator,
   'taiwan-id': TaiwanIdGenerator,
