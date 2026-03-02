@@ -116,6 +116,13 @@ export const toolsConfig: Tool[] = [
     category: 'Formatters',
     description: 'Format and minify JavaScript code',
   },
+  {
+    id: 'mermaid-preview',
+    name: 'Mermaid Previewer',
+    path: '/formatters/mermaid-preview',
+    category: 'Formatters',
+    description: 'Preview Mermaid diagrams in real-time',
+  },
 
   // Security
   {

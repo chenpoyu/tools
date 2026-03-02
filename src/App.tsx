@@ -34,6 +34,7 @@ import SqlFormatter from './pages/formatters/SqlFormatter';
 import XmlFormatter from './pages/formatters/XmlFormatter';
 import HtmlFormatter from './pages/formatters/HtmlFormatter';
 import JavaScriptFormatter from './pages/formatters/JavaScriptFormatter';
+import MermaidPreviewer from './pages/formatters/MermaidPreviewer';
 import CheatSheet from './pages/system/CheatSheet';
 import DiffChecker from './pages/formatters/DiffChecker';
 import Base64Image from './pages/converters/Base64Image';
@@ -83,6 +84,7 @@ const implementedTools: Record<string, React.ComponentType> = {
   'xml-format': XmlFormatter,
   'html-formatter': HtmlFormatter,
   'js-formatter': JavaScriptFormatter,
+  'mermaid-preview': MermaidPreviewer,
   'cheatsheet': CheatSheet,
   'diff': DiffChecker,
   'base64-image': Base64Image,

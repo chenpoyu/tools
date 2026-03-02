@@ -21,6 +21,7 @@
 - **XML 美化** - 格式化和美化 XML 文件
 - **HTML 格式化工具** - 格式化和壓縮 HTML 程式碼
 - **JavaScript 格式化工具** - 格式化和壓縮 JavaScript 程式碼
+- **Mermaid 預覽器** - 即時渲染 Mermaid 圖表語法
 
 ### 安全工具（Security）
 - **密碼產生器** - 產生安全的隨機密碼
