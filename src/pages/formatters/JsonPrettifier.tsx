@@ -9,7 +9,7 @@ import ToolPageWrapper, {
   TwoColumnLayout,
 } from '../../components/ToolPageWrapper';
 import { useTool } from '../../hooks/useTool';
-import { formatJson, minifyJson } from '../../utils/jsonFormatter';
+import { formatJson, minifyJson, unescapeJsonString } from '../../utils/jsonFormatter';
 
 const sampleJson = `{
   "name": "Poyu",
@@ -47,6 +47,26 @@ export default function JsonPrettifier() {
     }
   };
 
+  const handleUnescapeAndFormat = useCallback(() => {
+    const unescaped = unescapeJsonString(input);
+    setInput(unescaped);
+
+    if (!unescaped.trim()) {
+      setError('');
+      setOutput('');
+      return;
+    }
+
+    try {
+      setError('');
+      const formatted = formatJson(unescaped, spacing);
+      setOutput(formatted);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : '格式化失敗');
+      setOutput('');
+    }
+  }, [input, spacing, setError, setInput, setOutput]);
+
   const handleLoadSample = () => {
     setInput(sampleJson);
     setError('');
@@ -82,6 +102,7 @@ export default function JsonPrettifier() {
           
           <ToolButton onClick={handleFormat}>格式化</ToolButton>
           <ToolButton onClick={handleMinify} variant="secondary">壓縮</ToolButton>
+          <ToolButton onClick={handleUnescapeAndFormat} variant="secondary">Unescape &amp; 格式化</ToolButton>
         </>
       }
     >
@@ -128,6 +149,7 @@ export default function JsonPrettifier() {
             <li>✅ 自動驗證 JSON 格式</li>
             <li>✅ 支援 2 或 4 空格縮排</li>
             <li>✅ 一鍵壓縮 JSON（移除所有空白）</li>
+            <li>✅ Unescape 還原：將 \n \r \t \" 等逃逸序列還原後格式化</li>
             <li>✅ 即時格式化預覽</li>
           </ul>
         </div>

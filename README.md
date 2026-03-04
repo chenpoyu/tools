@@ -16,7 +16,7 @@
 - **字串大小寫轉換** - camelCase、snake_case、kebab-case 等格式互轉
 
 ### 格式化工具（Formatters）
-- ✅ **JSON 格式化** - 美化、壓縮和驗證 JSON
+- ✅ **JSON 格式化** - 美化、壓縮、驗證 JSON，支援 Unescape 還原（\n \r \t \"）
 - **SQL 格式化** - 格式化 SQL 查詢語句
 - **XML 美化** - 格式化和美化 XML 文件
 - **HTML 格式化工具** - 格式化和壓縮 HTML 程式碼

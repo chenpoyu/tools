@@ -6,7 +6,7 @@
 
 | 工具 | ID | 說明 | 狀態 |
 |------|-----|------|------|
-| JSON 格式化 | `json-format` | 美化/壓縮 JSON | ✅ |
+| JSON 格式化 | `json-format` | 美化/壓縮 JSON、Unescape 還原（\n \r \t \"） | ✅ |
 | SQL 格式化 | `sql-format` | 格式化 SQL（7 種方言） | ✅ |
 | XML 格式化 | `xml-format` | 美化/壓縮 XML | ✅ |
 | HTML 格式化 | `html-formatter` | HTML 格式化與壓縮 | ✅ |
